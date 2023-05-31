@@ -12,7 +12,7 @@ public class WinningClearanceImpl implements WinningClearance{
 	    private static int payout;
 
 	    @Override
-		public String clearanceWinnings(Integer theBet) {
+		public String clearance(Integer theBet) {
 
 
 	        balance = inventory.getTotalCashOnHand();
@@ -85,6 +85,7 @@ public class WinningClearanceImpl implements WinningClearance{
 	            inventory.setFive(oldFive);
 	            inventory.setOne(oldOne);
 	        }
+	        
 	        return success;
 	    }
 	
